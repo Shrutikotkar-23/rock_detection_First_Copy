@@ -1,0 +1,219 @@
+.navbar::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6); /* Adjust the color and opacity */
+  z-index: 1;
+}
+
+.navbar .container {
+  position: relative;
+  z-index: 2; /* Ensures content is above the overlay */
+  margin-left: 300px;
+  font-weight: 700;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  
+  
+  
+}
+.container{
+  position: relative;
+}
+
+/* .card-title {
+  font-weight: 600;
+  color: white;
+  letter-spacing: -0.02em;
+  line-height: 40px;
+  font-style: normal;
+  font-size: 28px;
+  padding-bottom: 8px;
+} */
+
+/* .uploader-card {
+  background-color: #0a3643;  /* Dark background 
+  border-radius: 50px;  /* Smooth, pill-like corners 
+  padding: 20px;
+  margin-top: 20px;
+  margin-left: 0;
+
+  border: 5px dotted #39D2B4;  /* Thicker dotted border for visibilit
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);  /* Subtle shadow for depth 
+  transition: box-shadow 0.3s, transform 0.3s;  /* Smooth animation 
+  box-sizing: border-box;  /* Ensures border is included in element size 
+} */
+
+
+.col-sm-6{
+  text-align: center;
+  color: white;
+ 
+
+}
+.uploader-card {
+  justify-content: center;
+  align-items:center ;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border: 2px aqua; /* Dashed border */
+  border-radius: 10px; /* Rounded corners */
+  background: rgb(86,86,95);
+  background: radial-gradient(circle, rgba(86,86,95,0.9137780112044818) 0%, rgba(0,0,0,1) 100%);
+  color: white;
+  box-shadow: 0 8px 16px rgba(184, 33, 33, 0.9); /* Subtle shadow */
+  padding: 20px;
+  transition: all 0.3s ease; /* Smooth transition on hover */
+}
+
+
+.card-title {
+  font-weight: 600;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  
+}
+.form-choice{
+  text-align: center;
+  padding: auto;
+}
+.upload-label {
+  font-weight: 500;
+  margin-bottom: 10px;
+  /* margin-left: 155px;
+   */
+   padding: auto;
+   justify-content: center;
+  background: rgb(210,22,29);
+background: radial-gradient(circle, rgba(210,22,29,0.7793242296918768) 0%, rgba(0,0,0,1) 100%);
+  cursor: pointer;
+  /* color: #007bff; */
+  border-radius: 7px;
+
+  display: inline-block;
+  padding: 12px 30px;
+  
+  color: #fff;
+  font-size: 1em;
+  transition: all .4s;
+  /* cursor: pointer; */
+}
+
+.upload-label:hover{
+  background: black;
+  color: red;
+}
+
+.btnn{
+  align-items: center;
+  font-weight: 500;
+  margin-bottom: 10px;
+  /* margin-left: 120px; */
+  margin-top: 30px;
+  background: rgb(210,22,29);
+  background: radial-gradient(circle, rgba(210,22,29,0.7793242296918768) 0%, rgba(0,0,0,1) 100%);
+  cursor: pointer;
+  /* color: #007bff; */
+  border-radius: 7px;
+  /* border-color: black; */
+
+  display: inline-block;
+  padding: 12px 30px;
+  
+  color: #fff;
+  font-size: 1em;
+  transition: all .4s;
+  /* cursor: pointer; */
+}
+
+
+
+#imageUpload {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.img-preview {
+  width: 100%;
+  height: 200px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+#imagePreview {
+  max-width: 100%;
+  max-height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+.image-section {
+  margin-top: 15px;
+}
+
+.btnn:hover{
+  background: black;
+  color: red;
+}
+
+
+
+/* .loader {
+  text-align: center;
+} */
+
+.bd {
+  padding-left: 20px;
+}
+
+
+/* .img-preview {
+  width: 256px;
+  height: 256px;
+  position: relative;
+  border: 5px solid #F8F8F8;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+  margin-top: 1em;
+  margin-bottom: 1em;    
+}
+
+.img-preview>div {
+  width: 100%;
+  height: 100%;
+  background-size: 256px 256px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+  */
+
+input[type="file"] {
+  display: none;
+}
+
+/* .upload-label:hover{
+  background: #34495E;
+  background: rgb(210,22,29);
+background: radial-gradient(circle, rgba(210,22,29,0.7793242296918768) 0%, rgba(0,0,0,1) 100%);
+} */
+
+.loader {
+  border: 8px solid #f3f3f3; 
+  border-top: 8px solid #3498db; 
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+  margin-left: 200px;
+}   
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
